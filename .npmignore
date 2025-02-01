@@ -1,0 +1,9 @@
+.vscode
+node_modules
+src
+test
+.gitignore
+.mocharc.json
+.eslint.config.mjs
+tsconfig.json
+yarn.lock
