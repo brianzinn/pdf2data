@@ -1,0 +1,30 @@
+{
+  "name": "pdf2data",
+  "version": "0.0.1",
+  "description": "PDF to data library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "author": "Brian Zinn",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20",
+    "eslint": "^9.19.0",
+    "mocha": "^11.1.0",
+    "pdfjs-dist": "^4.10.38",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0"
+  },
+  "peerDependencies": {
+    "pdfjs-dist": "4.x"
+  }
+}
