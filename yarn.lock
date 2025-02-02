@@ -1479,6 +1479,11 @@ wrap-ansi@^8.1.0:
     string-width "^5.0.1"
     strip-ansi "^7.0.1"
 
+xmachina@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/xmachina/-/xmachina-0.0.8.tgz#ccf99881c1fa860a6f1f2a4089229f993062f326"
+  integrity sha512-hUR3LTuCWaDM55wRE7BvudU34kUz4EQJ6aJsiKMBhK3mfGzmOfUaZURxhDaDcxDgSmJ6zBqcVNyD/KssjHOVJQ==
+
 y18n@^5.0.5:
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"

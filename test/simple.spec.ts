@@ -1,28 +1,14 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
 import { deepEqual } from "assert";
 import { getPageContents, getRowsFromPageContents, type PageDetail, type Row } from "../src/extractPDF";
+import { getFilePath } from "./common";
 
-describe("Typescript usage suite", () => {
-
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
-
-  const getFilePath = (fileName: string) => {
-    const filePath = path.join(__dirname, 'files', fileName);
-    if (!fs.existsSync(filePath)) {
-      throw new Error(`Cannot find file: ${filePath}`);
-    }
-    return filePath;
-  }
+describe("files/simple.pdf tests", () => {
 
   const simpleParser = (rows: [Row[], PageDetail[]]) => {
     return rows[0].map(row => row.items.filter(i => !/^ *$/.test(i.text)).map(i => i.text))
   }
 
-  it("should match 'simple.pdf'", async () => {
+  it("should match rows", async () => {
     const filePath = getFilePath('simple.pdf');
     const pageContents = await getPageContents(filePath);
 
