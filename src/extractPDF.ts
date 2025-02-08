@@ -191,9 +191,9 @@ export const getPageContents = async (
 
 export type ItemWithHorizontalPosition = {
   /**
-   * Note useful, but at least you can see if it changes.
+   * Not useful, but at least you can see if it changes.  Not available from OCR.
    */
-  fontName: string;
+  fontName?: string;
   /**
    * Used when applying transforms (with viewport)
    */
@@ -224,8 +224,10 @@ export type ItemWithHorizontalPosition = {
    *
    * Because a transformation matrix has only six elements that can be changed, it is usually specified in PDF as the six-element array [a b c d e f].
    * https://github.com/mozilla/pdf.js/issues/5643
+   * 
+   * TODO: make required and provide from OCR intermediate format.
    */
-  transform: number[];
+  transform?: number[];
   /**
    * Basic calculation for x co-ordinate without transforms.
    */

@@ -1,6 +1,6 @@
 {
   "name": "pdf2data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PDF to data library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,8 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "@google-cloud/vision": "^4.3.2",
     "@types/mocha": "^10.0.10",
     "@types/node": "20",
+    "dotenv": "^16.4.7",
     "eslint": "^9.19.0",
     "mocha": "^11.1.0",
     "pdfjs-dist": "^4.10.38",
